@@ -9,6 +9,10 @@ def canUnlockAll(boxes):
     readed = set()
     queue = deque([0])
 
+    if (type(boxes)) is not list:
+        return False
+    elif (len(boxes)) == 0:
+        return False
     while queue:
         curr = queue.popleft()
         readed.add(curr)
