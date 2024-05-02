@@ -17,4 +17,4 @@ def canUnlockAll(boxes):
             if key < n and key not in readed:
                 queue.append(key)
 
-        return len(readed) == n
+    return len(readed) == n
