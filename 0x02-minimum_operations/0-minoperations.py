@@ -1,28 +1,15 @@
 #!/usr/bin/python3
-""" compute the min ops to achieve the task
-return 0 if not possible
+"""
+Minimum operations
 """
 
 
 def minOperations(n: int) -> int:
     """
-    Minimum Operations
+    min ops
     """
-    if (not isinstance(n, int) or  n <= 1):
+    if (not isinstance(n, int) or n <= 1):
         return 0
-    result: string = "H"
-    tmp: string = ""
-    num_operations: int = 0
-    while len(result) < n:
-        if (n % len(result)) == 0:
-            tmp = result
-            result += tmp
-            num_operations += 2
-            continue
-        elif (n % len(result)) != 0:
-            result += tmp
-            num_operations += 1
-            continue
-    if len(result) == n:
-        return num_operations
-    return 0
+    for op in range(2, n+1):
+        if n % op == 0:
+            return minOperations(int(n/op)) + op
