@@ -2,14 +2,13 @@
 """
 MATRIX ROTATION
 """
-from typing import List
 
 
-def rotate_2d_matrix(matrix: List[int]):
+def rotate_2d_matrix(matrix):
     """    ROTATE 2D MATRIX
     """
     dict = {}
-    n: int = len(matrix)
+    n = len(matrix)
     i = 0
     k = 0
     while i < n:
