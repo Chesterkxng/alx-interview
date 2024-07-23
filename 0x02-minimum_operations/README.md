@@ -6,7 +6,7 @@ In a text file, there is a single character H. Your text editor can execute only
 - Returns an integer
 - If n is impossible to achieve, return 0
 
-- ## Example
+## Example
 ```
  carrie@ubuntu:~/0x02-minoperations$ cat 0-main.py
 #!/usr/bin/python3
