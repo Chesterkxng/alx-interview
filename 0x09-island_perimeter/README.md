@@ -13,6 +13,7 @@ Create a function def island_perimeter(grid): that returns the perimeter of the 
 - The island doesn’t have “lakes” (water inside that isn’t connected to the water surrounding the island).
 
 ## Example
+```
 guillaume@ubuntu:~/0x09$ cat 0-main.py
 #!/usr/bin/python3
 """
@@ -34,3 +35,4 @@ guillaume@ubuntu:~/0x09$
 guillaume@ubuntu:~/0x09$ ./0-main.py
 12
 guillaume@ubuntu:~/0x09$ 
+```
